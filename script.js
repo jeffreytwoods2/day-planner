@@ -6,6 +6,7 @@ var date  = d.getDate();
 var dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var monthList  = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var superScript;
+var workHours = [9, 10, 11, 12, 1, 2, 3, 4, 5];
 
 function superScriptWrite() {
     if (date === 1 || date === 21 || date === 31) {
