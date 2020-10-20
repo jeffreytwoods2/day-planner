@@ -8,6 +8,18 @@ var monthList  = ["January", "February", "March", "April", "May", "June", "July"
 var superScript;
 var workHours = [9, 10, 11, 12, 1, 2, 3, 4, 5];
 var button = $("button");
+var textBoxes = [
+    $("#nine"),
+    $("#ten"),
+    $("#eleven"),
+    $("#twelve"),
+    $("#one"),
+    $("#two"),
+    $("#three"),
+    $("#four"),
+    $("#five")
+];
+var textBoxVal = [];
 
 
 function superScriptWrite() {
@@ -22,6 +34,15 @@ function superScriptWrite() {
     };
 };
 
+function init() {
+    for (i = 0; i < textBoxes.length; i++) {
+        if (localStorage.getItem(textBoxes[i].attr("id")) !== null) {
+            textBoxes[i].text(localStorage.getItem(textBoxes[i].attr("id")))
+        };
+    };
+};
+
+init();
 superScriptWrite();
 
 today.text(dayList[day] + ", " + monthList[month] + " " + date);
@@ -35,11 +56,11 @@ button.on('click', function(event) {
 
     var input = $(this.parentElement.parentElement.children[1].children[0]);
     var inputAttr = input.attr("id");
+    localStorage.setItem(inputAttr, input.val());
 
-    localStorage.setItem(inputAttr, input.text());
+    console.log(localStorage.getItem("nine"));
 
-    var userNote = localStorage.getItem(inputAttr);
-    input.text(userNote);
-
-    console.log("This should be the user note: " + userNote);
+    console.log(input);
+    console.log("This should be the id of the text box: " + inputAttr);
+    console.log("This should be the text value currently in the field: " + input.val());
 });
