@@ -12,6 +12,7 @@
         <h1>Work Day Scheduler</h1>
 
         <p>A simple calendar app for scheduling your workday.</p>
+        <p>Gray times are past, blue time is present, green times are future.</p>
     </header>
 
     <!--This is outside of header so that the sticky attribute will work-->
@@ -29,7 +30,7 @@
             <table class="table table-bordered">
                 <tbody>
                     <tr>
-                        <td><h3>9:00</h3></td>
+                        <td id="time-nine" data-index="9"><h3>9:00</h3></td>
                         <td>
 
                             <!--ID is used to automatically populate text field w/ stored notes-->
@@ -40,7 +41,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>10:00</h3></td>
+                        <td id="time-ten" data-index="10"><h3>10:00</h3></td>
                         <td><textarea id="ten" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -48,7 +49,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>11:00</h3></td>
+                        <td id="time-eleven" data-index="11"><h3>11:00</h3></td>
                         <td><textarea id="eleven" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -56,7 +57,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>12:00</h3></td>
+                        <td id="time-twelve" data-index="12"><h3>12:00</h3></td>
                         <td><textarea id="twelve" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -64,7 +65,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>1:00</h3></td>
+                        <td id="time-one" data-index="13"><h3>1:00</h3></td>
                         <td><textarea id="one" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -72,7 +73,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>2:00</h3></td>
+                        <td id="time-two" data-index="14"><h3>2:00</h3></td>
                         <td><textarea id="two" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -80,7 +81,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>3:00</h3></td>
+                        <td id="time-three" data-index="15"><h3>3:00</h3></td>
                         <td><textarea id="three" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -88,7 +89,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>4:00</h3></td>
+                        <td id="time-four" data-index="16"><h3>4:00</h3></td>
                         <td><textarea id="four" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -96,7 +97,7 @@
                     </tr>
 
                     <tr>
-                        <td><h3>5:00</h3></td>
+                        <td id="time-five" data-index="17"><h3>5:00</h3></td>
                         <td><textarea id="five" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>

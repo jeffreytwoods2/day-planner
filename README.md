@@ -24,4 +24,5 @@ Suffix function makes sure that the date has the proper suffix (eg 24th, 2nd, 23
 Color function checks current time, changes style of time element in calendar depending on whether that time has passed, that time is current, or that time is in the future
 
 
-Screencaps of working website are included in screencap folder
+Screencaps of working website are included in screencap folder.
+Second screencap in particular demonstrates all three colors and sticky date div
