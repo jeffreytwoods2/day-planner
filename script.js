@@ -9,6 +9,7 @@ var superScript;
 var workHours = [9, 10, 11, 12, 1, 2, 3, 4, 5];
 var button = $("button");
 
+
 function superScriptWrite() {
     if (date === 1 || date === 21 || date === 31) {
         superScript = "st"
@@ -22,14 +23,23 @@ function superScriptWrite() {
 };
 
 superScriptWrite();
-console.log(date);
-console.log(superScript);
 
 today.text(dayList[day] + ", " + monthList[month] + " " + date);
 today.append("<sup>" + superScript + "</sup>");
 
-button.on('click', function (event) {
+console.log(date);
+console.log(superScript);
+
+button.on('click', function(event) {
     event.stopPropagation();
 
-    console.log(this.parentElement);
+    var input = $(this.parentElement.parentElement.children[1].children[0]);
+    var inputAttr = input.attr("id");
+
+    localStorage.setItem(inputAttr, input.text());
+
+    var userNote = localStorage.getItem(inputAttr);
+    input.text(userNote);
+
+    console.log("This should be the user note: " + userNote);
 });

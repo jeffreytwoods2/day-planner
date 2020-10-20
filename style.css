@@ -13,18 +13,27 @@ header {
     background-color: white;
     z-index: 1;
     width: 100%;
+    font-size: xx-large;
 }
 
 hr {
     margin-top: 10px;
 }
 
-main {
-    width: 80%;
-    margin: 0 auto;
-    z-index: 0;
+h3 {
+    margin-top: 10px;
 }
 
-.input-group-prepend {
-    width: 20%;
+textarea {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
 }
