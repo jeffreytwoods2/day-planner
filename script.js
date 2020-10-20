@@ -96,10 +96,3 @@ button.on('click', function(event) {
     // Sets whatever was typed in Notes to local storage, ties it to the correct text field by giving it same key name as text field's ID
     localStorage.setItem(inputAttr, input.val());
 });
-
-console.log("The hour string: " + hourString);
-console.log("The current hour value: " + d.getHours());
-console.log("The bkg color of the nine block: " + $("#time-nine").css("background-color"));
-console.log("The data index attr of the nine block: " + $("#time-nine").attr("data-index"));
-console.log("parse int on the data-index of time block nine: " + parseInt($("#time-nine").attr("data-index")));
-console.log(d.getHours() > parseInt(timeBoxes[0].attr("data-index")));
