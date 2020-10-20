@@ -14,18 +14,25 @@
         <p>A simple calendar app for scheduling your workday.</p>
     </header>
 
+    <!--This is outside of header so that the sticky attribute will work-->
     <div class="container-fluid" id="sticky">
+
+        <!--This div is automatically updated to display current date-->
         <div id="today"></div>
         <hr>
     </div>
 
     <div class="row">
         <div class="container col-10">
+
+            <!--Used table for calendar to improve responsiveness on mobile-->
             <table class="table table-bordered">
                 <tbody>
                     <tr>
                         <td><h3>9:00</h3></td>
                         <td>
+
+                            <!--ID is used to automatically populate text field w/ stored notes-->
                             <textarea id="nine" placeholder="Notes"></textarea>
                         <td>
                             <button type="button" class="btn btn-primary">Save</button>
